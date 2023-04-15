@@ -1,0 +1,579 @@
+body{
+    background-color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.cabecalho{
+    background-color: #2D7359;
+    left: 0px;
+    top: 0px;
+    height: 90px;
+}
+
+.logo{
+    position: relative;
+    height: 80px;
+    top: 5px;
+    left: 80px;
+    border-radius: 5px;
+}
+
+.header-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.header-nav ul{
+    margin: 25px 70px 0 0;
+    padding: 0;
+}
+
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+
+.header-nav a{
+    color: #D0D9D6;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'IM FELL Double Pica';
+}
+
+.header-nav a:hover{
+    color: #CBB046;
+}
+
+.banner{
+    position: relative;
+    width: 1206px;
+    height: 550px;
+    background-image: linear-gradient(0deg, rgba(45, 115, 89, 0.25), rgba(45, 115, 89, 0.25));
+}
+
+.descricao_banner{
+    position: absolute;
+    width: 480px;
+    height: 400px;
+    left: 80px;
+    top: 145px;
+    background: #2D7359;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.paragrafo_1{
+    position: relative;
+    text-align: justify;
+    height: 183px;
+    width: 440px;
+    right: 20px;
+    left: 20px;
+    top: 20px;
+    font-size: 15px;
+    line-height: 35px;
+    color: #D0D9D6;
+    font-family: 'IM FELL Double Pica';
+}
+
+.paragrafo_2{
+    position: relative;
+    width: 440px;
+    height: 76.35px;
+    left: 20px;
+    font-family: 'IM FELL Double Pica SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 38px;
+    text-align: center;
+    color: #CBB046;
+}
+.paragrafo_3{
+    position: relative;
+    width: 440px;
+    height: 38px;
+    left: 20px;
+    font-family: 'IM FELL Double Pica SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #D0D9D6;
+}
+
+.botao_saiba_mais{
+    position: relative;
+    background-color: #CBB046;
+    border-color: #CBB046;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    left: 350px;
+    bottom: 15px;
+}
+.texto{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'IM FELL Double Pica';
+    font-size: 12px;
+    color: #D0D9D6;
+    letter-spacing: 1px;
+    font-style:inherit;
+}
+.texto:hover{
+    color: #2D7359;
+}
+
+#servicos {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    gap: 10px;
+    height: 570px;
+}
+
+
+.pacote_fundo{
+    position: relative;
+    width: 420px;
+    height: 490px;
+    background: #2D7359;
+    border-radius: 10px 10px 10px 10px;
+    top: 40px;
+    left: 80px;
+}
+.titulo_servicos{
+    position: relative;
+    width: 100px;
+    font-family: 'IM FELL Double Pica SC';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #CBB046;
+    left: 135px;
+    top: 20px;
+}
+
+.imagem_servico{
+    position: relative;
+    width: 320px;
+    height: 189px;
+    border-radius: 5px;
+    left: 50px;
+    top: 10px;
+}
+
+.paragrafo_servico{
+    position: relative;
+    width: 289px;
+    font-family: 'IM FELL Double Pica SC';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #D0D9D6;
+    left: 73px;
+    top: 10px
+}
+
+.botao_detalhes{
+    position: relative;
+    background-color: #CBB046;
+    border-color: #CBB046;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    left: 163px;
+    top: 10px;
+}
+.texto_detalhes{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'IM FELL Double Pica';
+    font-size: 12px;
+    color: #D0D9D6;
+    letter-spacing: 1px;
+    font-style:inherit;
+}
+.texto_detalhes:hover{
+    color: #2D7359;
+}
+.botao_outros_servicos{
+    position: relative;
+    background-color: #CBB046;
+    border-color: #CBB046;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    left: 163px;
+    top: 10px;
+}
+.outros_pacotes{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'IM FELL Double Pica';
+    font-size: 12px;
+    color: #D0D9D6;
+    letter-spacing: 1px;
+    font-style:inherit;
+}
+.outros_pacotes:hover{
+    color: #2D7359;
+}
+#formulario{
+    position: relative;
+    top: 20px;
+    left: 80px;
+    width: 1046px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D0D9D6;
+}
+.titulo_formulario{
+    position: relative;
+    top: 5px;
+    font-family: 'IM FELL Double Pica';
+    font-size: 18px;
+    text-align: center;
+    color: #2D7359;
+}
+.label{
+    position: relative;
+    top: 5px;
+    font-family: 'IM FELL Double Pica';
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    color: #CBB046;
+    line-height: 25px;
+}
+.input{
+    border-radius: 5px;
+    background-color: #D0D9D6;
+    text-align: center;
+}
+.input:focus{
+    background-color: #E5E5E5;
+}
+.botao_formulario{
+    position: relative;
+    background-color:#2D7359;
+    border-color:#2D7359;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    left: 469px;
+    top: 5px;
+}
+.botao_receber{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'IM FELL Double Pica';
+    font-size: 12px;
+    color: #D0D9D6;
+    letter-spacing: 1px;
+    font-style:inherit;
+}
+.botao_receber:hover{
+    color: #CBB046;
+}
+.geral{
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+#title{
+    position:relative;
+    left: 320px;
+    right: 320px;
+    width: 410px;
+    height: 80px;
+    background-color: #D0D9D6;
+    border-radius: 10px;
+}
+#title_sobre{
+    position:relative;
+    left: 320px;
+    right: 320px;
+    width: 410px;
+    height: 80px;
+    background-color:#2D7359;
+    border-radius: 10px;
+}
+
+.texto_titulo{
+    position: relative;
+    top: 8px;
+    left: 105px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: 'IM FELL Double Pica SC';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #2D7359;
+
+}
+.texto_login{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    top: 5px;
+    left: 280px;
+    font-family: 'IM FELL Double Pica SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2D7359;
+}
+.quadro{
+    position: relative;
+    width: 500px;
+    height: 450px;
+    left: 270px;
+    top: 5px;
+    background-color: #2D7359;
+    border-radius: 10px;
+
+}
+.quadro_sobre{
+    position: relative;
+    width: 980px;
+    height: 600px;
+    left: 50px;
+    top: 5px;
+    background-color: rgba(45, 115, 89, 0.25);
+    border-radius: 10px;
+}
+.texto_1{
+    position: relative;
+    width: 900px;
+    height: auto;
+    left: 35px;
+    top: 20px;
+    font-family: 'IM FELL Double Pica SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: #2D7359;
+    text-align: justify;
+}
+.texto_2{
+    position: relative;
+    width: 700px;
+    height: 140px;
+    left: 150px;
+    top: 20px;
+    font-family: 'IM FELL Double Pica SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #CB9646;
+}
+.quadro_interno{
+    position: relative;
+    top: 20px;
+    width: 420px;
+    left: 27px;
+    background-color: #D0D9D6;
+    border: none;
+    border-radius: 5px;
+}
+.titulo_quadro{
+    position: relative;
+    font-family: 'IM FELL Double Pica SC';
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #2D7359;
+    font-size: 15px;
+    text-align: center;
+}
+.paragrafo_pacote{
+    position: relative;
+    top: 5px;
+    width: 410px;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'IM FELL Double Pica SC';
+    color: #2D7359;
+    line-height: 20px ;
+}
+.topicos{
+    position: relative;
+    top: 5px;
+    width: 410px;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'IM FELL Double Pica SC';
+    color: #2D7359;
+    line-height: 20px ;
+}
+.label_login{
+    position: relative;
+    text-align: center;
+    font-family: 'IM FELL Double Pica SC';
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #2D7359;
+    font-size: 15px;
+}
+.botao_login{
+    position: relative;
+    background-color:#2D7359;
+    border-color:#2D7359;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    left: 160px;
+    top: 5px;
+}
+#login{
+    color: #D0D9D6;
+    text-decoration: none;
+    font-family: 'IM FELL Double Pica SC';
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+#login:hover{
+    color:#CBB046;
+}
+.botao_fale_conosco{
+    position: relative;
+    background-color:#2D7359;
+    border-color:#2D7359;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    left: 160px;
+    top: 5px;
+}
+.fale_conosco{
+    color: #D0D9D6;
+    text-decoration: none;
+    font-family: 'IM FELL Double Pica SC';
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.fale_conosco:hover{
+    color:#CBB046;
+}
+.obs{
+    position:relative;
+    top: 5px;
+    left: 5px;
+    text-align: justify;
+    font-size: 10px;
+    color: #2D7359;
+    font-family: 'IM FELL Double Pica SC';
+
+}
+.rodape{
+    position: relative;
+    background-color: #2D7359;
+    top: 40px;
+    bottom: 20px;
+    display: grid;
+    height: 95px;
+}
+.titulo_contato{
+    position: relative;
+    left: 80px;
+    top: 5px;
+    font-family: 'IM FELL Double Pica SC';
+    font-weight: 400;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #CBB046;
+    font-size: 12px;
+}
+.texto_contato{
+    position: relative;
+    left: 80px;
+    top: 5px;
+    font-family: 'IM FELL Double Pica SC';
+    font-weight: 400;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color:#E5E5E5;
+    font-size: 10px;
+}
+.titulo_redes_sociais{
+    position: absolute;
+    right: 80px;
+    top: 5px;
+    font-family: 'IM FELL Double Pica SC';
+    font-weight: 400;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #CBB046;
+    font-size: 12px;
+ 
+}
+.icones{
+    position: absolute;
+    right: 80px;
+    top: 35px; 
+}
+.links{
+    width: 20px;
+    height: 20px;
+    left: 1218px;
+    top: 2135px;
+}
+.copy{
+    position: absolute;
+    right: 80px;
+    top: 55px;
+    font-family: 'IM FELL Double Pica SC';
+    font-weight: 400;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color:#E5E5E5;
+    font-size: 10px;
+    text-align: right;
+}
+
+
+

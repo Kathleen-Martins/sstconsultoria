@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ESST|Login</title>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Kathleen Martins">
+    <meta name="description" content="projeto final do curso dev web">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/imagem_logo.png">
+</head>
+<body>
+    
+    <div id="pagina">
+        <header class="cabecalho">
+            <img class="logo" src="imagens/logo.png" alt="logo">
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="index.html#servicos" target="_blank">Serviços</a></li>
+                    <li><a href="#title">Login</a></li>
+                    <li><a href="sobre.html" target="_blank">Sobre nós</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="geral">
+            <div id="title">
+                <h2 class="texto_titulo">Faça Login</h2>
+            </div>
+            <p class="texto_login">Acompanhe seus envios, emita suas documentações já
+                assinadas, agende seus treinamentos disponíveis, troque seu
+                pacote e muito mais.</p>
+            <div class="quadro">
+                <img class="logo" style="left:191px;" src="imagens/logo.png" alt="logo">
+                <form id="loginForm">
+                    <fieldset class="quadro_interno">
+                        <p class="titulo_quadro">Já é nosso cliente</p>
+                        <div class="label_login">
+                            <label for="username">Usuário</label><br>
+                            <input class= "input" id="username" type="text" name="usuario" placeholder="Digite seu usuário" required/>   
+                        </div><br>
+                        <div class="label_login" >
+                            <label for="password" >Senha</label><br>
+                            <input  class= "input" id="password" type="password" name="password" placeholder="Digite sua senha" required />
+                        </div><br>
+                        <button class="botao_login" type="submit" onclick="logar(); return false" id="login" >Login</button>
+                        <div><p class="titulo_quadro" style="top:10px;">Ainda não é nosso cliente</p>
+                        <button class="botao_fale_conosco" style="width: auto; left:145px; top:10px;"><a href="https://api.whatsapp.com/send?phone=5535999183873" class="fale_conosco">Fale conosco</a></button><br><br>
+                        </div>
+                </fieldset>
+                </form>
+                <script>
+                    function logar(){
+                        var login = document.getElementById('username').value;
+                        var senha = document.getElementById('password').value;
+
+                        if(login == "admin" && senha == "admin"){
+                            location.href = "painel.html";
+
+                        }
+                        else{
+                            alert("Usuário ou senha inválidos")
+                        }
+                    }
+                </script>
+            </div>
+
+        </div>
+        <footer class="rodape">
+        
+            <div class="contatos">
+                <p class="titulo_contato">Entre em contato conosco
+                    <address>
+                        <p class="texto_contato">Av Tristao Andrade de Moura, 456 - Osasco - SP<br>19 99936-4556<br>                
+                            esst.comsultoria@gamil.com
+                            </p>  
+                        </adress>
+                <p>
+                
+            </div>
+            <div class="redes_sociais">
+                <h2 class="titulo_redes_sociais">Nossas redes sociais
+                </h2>
+                <div class="icones">
+                    <a href="https://www.linkedin.com/feed/" target="_blank">
+                        <img src="imagens/icone_linkedin.png" class="links"></a>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="imagens/icone_instagram.png" class="links"></a>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="imagens/icone_facebook.png" class="links"></a>
+                    </a>
+                </div>
+    
+            </div>
+            <p class="copy">Copyright &copy; esst_consultoria@insta.com <br>
+                Produzido em 2023
+            </p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
